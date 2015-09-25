@@ -67,3 +67,7 @@ make logs
 ```
 
 - Extra sugar
+
+The Makefile checks for certain executable files that are executed before and after "make run" and "make build".
+One can use these files to setup or clenup stuff after building or running the container. The files must be named
+"prerun", "postrun", "prebuild" or "postbuild".
