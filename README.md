@@ -2,7 +2,7 @@
 
 Configure, build, run, control docker containers with gnu-make and simple config files.
 
-This evolved from a small hack because i'm a lacy typing person so do not expect to much.
+This evolved from a small hack because i'm a lacy typing person so do not expect to much and use on your own risk :).
 
 - Howto use
 
@@ -31,3 +31,39 @@ make run
 # get a bash shell inside the container by executing
 make interactive
 ```
+
+- Supported commands
+
+```bash
+# create a container image from Dockerfile
+make build       
+
+# save the container image into a tar file for deployment
+make save
+
+# load a container image from a tar file
+make load        
+
+# remove a saves container image tar file
+make clean       
+
+# run a shell inside the container for debugging
+make interactive 
+
+# run the container image
+make run         
+
+# run the container image in background
+make background  
+
+# stops the container image
+make stop        
+
+# attach to a container running in background mode
+make attach      
+
+# show logs from container running in background mode
+make logs        
+```
+
+- Extra sugar
